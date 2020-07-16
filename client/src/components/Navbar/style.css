@@ -1,0 +1,39 @@
+.navbar {
+  padding: 0;
+}
+
+.navbarNav {
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+/*the header css code below is used to style a border on the bottom to have a dashed black line*/
+.wrapper {
+  border-bottom: 10px dashed black;
+}
+
+h4 {
+  color: black;
+}
+a {
+  color: black;
+}
+
+/*the nav-link css code below is used to style the list of navigational points that sit in the right side of the navbar.*/
+.nav-link {
+  list-style-type: horizontal;
+  margin-right: 0;
+  float: left;
+  color: black;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  margin-left: 0;
+  padding: 20px;
+  margin-bottom: 0;
+  color: black;
+  width: 20px;
+}

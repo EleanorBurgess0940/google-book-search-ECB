@@ -8,13 +8,13 @@ function Navbar() {
       <div class="wrapper">
         <div class="navbar navbar-light bg-light">
           <div id="main-content">
-            <a class="navbar-brand nav-link" href="home.html">
+            <a class="navbar-brand" href="home.html">
               <h2>
                 <Link
                   to="/"
                   className={
                     window.location.pathname === "/" ||
-                    window.location.pathname === "/about"
+                    window.location.pathname === "/"
                       ? "nav-link active"
                       : "nav-link"
                   }

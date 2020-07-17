@@ -8,7 +8,7 @@ function Search() {
     <div>
       <Container>
         <Row>
-          <Col>
+          <Col size="md-12">
             <h1>Search</h1>
           </Col>
         </Row>

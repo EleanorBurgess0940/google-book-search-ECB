@@ -10,9 +10,6 @@ ul {
   list-style-type: none;
 }
 /*the header css code below is used to style a border on the bottom to have a dashed black line*/
-.wrapper {
-  border-bottom: 10px dashed black;
-}
 
 h4 {
   color: black;

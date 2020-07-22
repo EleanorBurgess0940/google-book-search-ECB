@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const googlebooks = new Schema({
+const bookSchema = new Schema({
   title: { type: String, required: true },
   authors: { type: String, required: true },
   description: String,
@@ -10,6 +10,6 @@ const googlebooks = new Schema({
   date: { type: Date, default: Date.now },
 });
 
-const Book = mongoose.model("Book", googlebooks);
+const Book = mongoose.model("Book", bookSchema);
 
 module.exports = Book;

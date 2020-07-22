@@ -1,25 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
+import { Link } from "react-router-dom";
 
-function Navbar() {
+function Nav() {
   return (
     <nav>
       <div class="wrapper">
         <div class="navbar navbar-light bg-light">
           <div id="main-content">
-            <a class="navbar-brand" href="home.html">
+            <a class="navbar-brand nav-link" href="home.html">
               <h2>
-                <Link
-                  to="/"
-                  className={
-                    window.location.pathname === "/" ||
-                    window.location.pathname === "/"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
-                  Google Books
+                <Link className="nav-link" to={"/"}>
+                  Google Book Search
                 </Link>
               </h2>
             </a>
@@ -27,28 +19,12 @@ function Navbar() {
           <div id="sidebar">
             <ul class="navbar list-group list-group-horizontal">
               <li class="nav-item active">
-                <Link
-                  to="/search"
-                  className={
-                    window.location.pathname === "/" ||
-                    window.location.pathname === "/search"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
+                <Link className="nav-link" to={"/search"}>
                   Search
                 </Link>
               </li>
               <li class="nav-item">
-                <Link
-                  to="/saved"
-                  className={
-                    window.location.pathname === "/" ||
-                    window.location.pathname === "/saved"
-                      ? "nav-link active"
-                      : "nav-link"
-                  }
-                >
+                <Link className="nav-link" to={"/saved"}>
                   Saved
                 </Link>
               </li>
@@ -60,4 +36,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;

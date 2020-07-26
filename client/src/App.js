@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Saved from "./pages/saved";
-import Search from "./pages/search";
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
-import SearchForm from "./components/SearchForm";
+import SearchForm from "./components/SearchArea";
 
 class App extends Component {
   render() {
@@ -16,7 +15,6 @@ class App extends Component {
           <Wrapper>
             <Route exact path="/" component={Saved} />
             <Route exact path="/save" component={Saved} />
-            <Route exact path="/search" component={Search} />
           </Wrapper>
         </div>
       </Router>

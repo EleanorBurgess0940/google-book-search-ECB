@@ -18,11 +18,6 @@ function Nav() {
           </div>
           <div id="sidebar">
             <ul class="navbar list-group list-group-horizontal">
-              <li class="nav-item active">
-                <Link className="nav-link" to={"/search"}>
-                  Search
-                </Link>
-              </li>
               <li class="nav-item">
                 <Link className="nav-link" to={"/saved"}>
                   Saved

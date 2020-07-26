@@ -26,6 +26,7 @@
     "mini-create-react-context": "^0.4.0",
     "mongod": "^2.0.0",
     "mongoose": "^5.9.25",
+    "node": "^14.5.0",
     "node.js": "0.0.1-security",
     "path": "^0.12.7",
     "react": "^16.13.1",

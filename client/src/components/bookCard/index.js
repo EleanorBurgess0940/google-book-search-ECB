@@ -2,17 +2,12 @@ import React from "react";
 
 function bookCard(props) {
   return (
-    <div className="card">
-      <div className="img-container">
-        <img src={props.image} alt={props.title} />
-      </div>
-      <div className="content">
-        <ul>
-          <li>{props.title}</li>
-          <li>{props.about}</li>
-          <li>{props.deployed}</li>
-          <li>{props.github}</li>
-        </ul>
+    <div classname="card-container">
+      <img src={props.image} alt="" />
+      <div classname="desc">
+        <h2>Title: {props.title}</h2>
+        <h3>By: {props.author}</h3>
+        <h4>{props.description}</h4>
       </div>
     </div>
   );

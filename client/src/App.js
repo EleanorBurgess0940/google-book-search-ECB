@@ -4,6 +4,7 @@ import Saved from "./pages/saved";
 import Navbar from "./components/Navbar";
 import Wrapper from "./components/Wrapper";
 import SearchForm from "./components/SearchArea";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -13,7 +14,6 @@ class App extends Component {
           <Navbar />
           <SearchForm />
           <Wrapper>
-            <Route exact path="/" component={Saved} />
             <Route exact path="/save" component={Saved} />
           </Wrapper>
         </div>

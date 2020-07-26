@@ -1,9 +1,10 @@
 import React from "react";
 import BookCard from "../bookCard";
+import "./style.css";
 
 const SearchResults = (props) => {
   return (
-    <div className="list">
+    <div className="results">
       {props.books.map((book, i) => {
         return (
           <BookCard

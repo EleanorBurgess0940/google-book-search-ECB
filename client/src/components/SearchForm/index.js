@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 const SearchArea = (props) => {
   return (
@@ -12,6 +13,7 @@ const SearchArea = (props) => {
           placeholder="Search for a Book"
           id="breed"
         />
+        <br></br>
         <button
           type="submit"
           onClick={props.handleFormSubmit}

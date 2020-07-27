@@ -1,3 +1,9 @@
+//This adds functionality to the searchField
+//This will take the state of searchField and push them to the Api
+//the handlechange function will deal with people typing into the field
+//the handleSearch will push the data that a person has typed in to the API
+//it also deals with the button
+
 import React, { Component } from "react";
 import SearchForm from "../SearchForm/index";
 
@@ -17,7 +23,6 @@ class Books extends Component {
   }
 
   handleSearch = (e) => {
-    console.log(e.target.value);
     this.setState({ searchField: e.target.value });
   };
 

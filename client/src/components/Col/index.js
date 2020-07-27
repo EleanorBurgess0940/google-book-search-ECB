@@ -1,3 +1,5 @@
+//basic code for a column
+
 import React from "react";
 
 function Col(props) {

@@ -1,3 +1,6 @@
+///this will create a BookCart with props passed from the search button
+//the save me button on this site does not work I am still working on that
+
 import React from "react";
 
 function bookCard(props) {
@@ -27,3 +30,6 @@ function bookCard(props) {
 }
 
 export default bookCard;
+
+//this exports the bookCard
+//the book card is loosely based on the cartoon friend activity we did in class

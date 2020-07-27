@@ -1,8 +1,10 @@
+//This page is currently not working
+//the app refuses to post
+
 import React, { Component } from "react";
 import Container from "../components/Container";
 import Row from "../components/Row";
 import Col from "../components/Col";
-import bookCard from "../components/bookCard";
 
 class Saved extends Component {
   state = {

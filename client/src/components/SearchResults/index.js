@@ -1,3 +1,8 @@
+//This takes the information from the search function
+//and then creates BookCards from the information passed down through props
+//the if and else statement  below works with books that do not have an image
+//Without that we would not have bookcards with no image.
+
 import React from "react";
 import BookCard from "../bookCard";
 import "./style.css";

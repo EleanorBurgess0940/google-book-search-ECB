@@ -1,3 +1,7 @@
+//Code for the navbar
+//this includes a link to the search page
+//the search page currently does not work
+
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";

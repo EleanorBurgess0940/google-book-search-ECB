@@ -1,3 +1,6 @@
+//this is the search form
+//This is currently working with the API calls
+
 import React from "react";
 import "./style.css";
 
@@ -11,7 +14,7 @@ const SearchArea = (props) => {
           type="text"
           className="form-control"
           placeholder="Search for a Book"
-          id="breed"
+          id="book"
         />
         <br></br>
         <button

@@ -1,10 +1,17 @@
+//This adds functionality to the searchField
+//This will take the state of searchField and push them to the Api
+//the handlechange function will deal with people typing into the field
+//the handleSearch will push the data that a person has typed in to the API
+//it also deals with the button
+//The saved books part of this code isnot working
+
 import React, { Component } from "react";
 import API from "../../utils/API";
 import SearchForm from "../SearchForm";
 import SearchResults from "../SearchResults";
 import axios from "axios";
 
-// Using the datalist element we can create autofill suggestions based on the props.breeds array
+// Using the datalist element we can create autofill suggestions based on the props.books array
 class Books extends Component {
   state = {
     books: [],
@@ -41,28 +48,12 @@ class Books extends Component {
 
   handleSaveSubmit = (event) => {
     event.preventDefault();
-    console.log(event.target);
-
-    axios
-      .post("/", {
-        title: event.target.title,
-        author: event.target.author,
-        image: event.target.image,
-        description: event.target.description,
-      })
-      .then((response) => {
-        if (response.data) {
-          this.setState({
-            redirectTo: "/login",
-          });
-        } else {
-          console.log("sign-up error");
-        }
-      })
-      .catch((error) => {
-        console.log("signup error: ");
-        console.log(error);
-      });
+    axios.post("/", {
+      title: event.target.title,
+      author: event.target.author,
+      image: event.target.image,
+      description: event.target.description,
+    });
   };
 
   render() {

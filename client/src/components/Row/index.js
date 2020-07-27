@@ -1,3 +1,5 @@
+//basic set up for a Row
+
 import React from "react";
 
 function Row(props) {

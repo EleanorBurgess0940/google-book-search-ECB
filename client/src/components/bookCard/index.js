@@ -10,6 +10,18 @@ function bookCard(props) {
       <h2>{props.title}</h2>
       <h3>{props.author}</h3>
       <p>{props.description}</p>
+      <button
+        type="submit"
+        onClick={props.saveMe}
+        title={props.title}
+        author={props.author}
+        image={props.image}
+        description={props.description}
+        className=""
+      >
+        {" "}
+        Save me for later!{" "}
+      </button>
     </div>
   );
 }

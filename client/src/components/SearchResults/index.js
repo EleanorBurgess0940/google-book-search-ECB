@@ -6,16 +6,28 @@ const SearchResults = (props) => {
   return (
     <div className="results">
       {props.books.map((book, i) => {
-        return (
-          <BookCard
-            key={i}
-            title={book.volumeInfo.title}
-            author={book.volumeInfo.authors[0]}
-            secondAuthor={book.volumeInfo.authors[1]}
-            image={book.volumeInfo.imageLinks.thumbnail}
-            description={book.volumeInfo.description}
-          />
-        );
+        if (typeof book.volumeInfo.imageLinks != "undefined") {
+          return (
+            <BookCard
+              key={i}
+              title={book.volumeInfo.title}
+              author={book.volumeInfo.authors}
+              image={book.volumeInfo.imageLinks.thumbnail}
+              description={book.volumeInfo.description}
+              saveMe={props.saveMe}
+            />
+          );
+        } else {
+          return (
+            <BookCard
+              key={i}
+              title={book.volumeInfo.title}
+              author={book.volumeInfo.authors}
+              description={book.volumeInfo.description}
+              saveMe={props.saveMe}
+            />
+          );
+        }
       })}
     </div>
   );

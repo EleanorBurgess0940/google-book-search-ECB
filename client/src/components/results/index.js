@@ -7,6 +7,7 @@ class Books extends Component {
     this.state = {
       books: [],
       searchField: "",
+      saveMe: [],
     };
   }
 
@@ -24,7 +25,6 @@ class Books extends Component {
     return (
       <div>
         <SearchForm handleSearch={this.handleSearch} />
-        <p> meow </p>
       </div>
     );
   }

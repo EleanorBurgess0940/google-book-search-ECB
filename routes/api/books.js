@@ -1,13 +1,8 @@
 const router = require("express").Router();
-const booksController = require("../../controllers/booksController");
+const bookController = require("../../controllers/bookController");
 
-// Matches with "/api/reactreadinglist"
-router.route("/").get(booksController.findAll).post(booksController.create);
-
-router.post("/", (req, res) => {
-  console.log(req, res);
-  console.log("im here");
-});
+// Matches with "/api/books"
+router.route("/").get(bookController.findAll).post(bookController.create);
 
 // Matches with "/api/reactreadinglist/:id"
 router
